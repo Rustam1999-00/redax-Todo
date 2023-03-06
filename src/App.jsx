@@ -30,6 +30,7 @@ function App() {
 
     data ? dispatch({ type: TODO_EDI, payload: data }) : ''
 
+    todoRef.current.value = ''
     toast.success('Bajarildi')
   }
 
